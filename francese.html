@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="stile.css">
+
+
+
+    <!--LINK GOOGLE-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+    <!--LINK ANIMAZIONI-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--LINK ICONE-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-danger bg-danger fixed-top">
+
+
+        <!--LINEA ORIZZONTALE-->
+        <div class="container-fluid">
+            <img src="logo1.jpg" width="200" alt="">
+            <a class="navbar-brand" href="francese.html"><span class="titoloVerticale ">LA BELLA BARI </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--LINEA VERTICALE-->
+            <div class="offcanvas offcanvas-start text-bg-danger" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+
+                <img id="logopiccolo" src="logo1.jpg" alt="pane">
+
+                <div class="offcanvas-header">
+
+                    <h1 id="offcanvasDarkNavbarLabel">LA BELLA BARI</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 text-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="panificio.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">NOS SERVICES</a>
+                            <li> - Gastronomie</li>
+                            <li> - Buffet</li>
+                            <li> - Rôtisserie</li>
+                            <li> - Pâtisserie</li>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INFO</a>
+                        <li> - Adresse : Via Pasubio 157 Bari</li>
+                        <li> - Téléphone fixe : 0808175169 </li>
+                        <li> - Portable : 3889788780 </li>
+                        
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CHOISIR LA LANGUE
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu">
+                                <li><a class="dropdown-item" href="panificio.html">ITALIEN</a></li>
+                                <li><a class="dropdown-item" href="inglese.html">ANGLAIS</a></li>
+                                <li><a class="dropdown-item" href="francese.html">FRANÇAIS</a></li>
+                                <li><a class="dropdown-item" href="tedesco.html">ALLEMAND</a></li>
+                                <li><a class="dropdown-item" href="giapponese.html">JAPONAIS</a></li>
+                                <li>
+
+                            </ul>
+                        </li>
+
+
+
+                        <li class="nav-item">
+                            <button style="border: solid; border-radius: 20px; width: 200px; margin-top: 20px;"
+                                id="toggleButton">Change le thème</button>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </nav>
+
+
+    <!--RISOLVE UN PROBLEMA DI DISPLAY NONE-->
+    <div id="animated-text-strip" id="strip1">
+        <span style="color: #B80000;" class="marquee">LES DERNIÈRES RÉCESSIONS DE &nbsp;</span>
+        <span style="color: #B80000" class="marquee">&nbsp LES DERNIÈRES RÉCESSIONS DE </span></span>
+        <span style="color: #B80000" class="marquee">&nbsp LES DERNIÈRES RÉCESSIONS DE </span></span>
+        <span style="color: #B80000" class="marquee">&nbsp LES DERNIÈRES RÉCESSIONS DE </span></span>
+    </div>
+
+    <div id="animated-text-strip" id="strip2">
+        <span class="marquee">NOS PRODUITS &nbsp;</span>
+        <span class="marquee">NOS PRODUITS &nbsp;</span></span>
+        <span class="marquee">NOS PRODUITS &nbsp;</span></span>
+        <span class="marquee">NOS PRODUITS &nbsp;</span></span>
+
+    </div>
+
+    <!-- Apertura del tag main -->
+    <main>
+
+        <div class="row">
+
+            <!--CARD LUMINOSA 1-->
+
+            <h1 style="text-align: center; font-size: xx-large; margin-bottom: 30px;">BOULANGERIE</h1>
+
+
+
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="cestinopadre.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PANIER À PAIN</h2>
+            </div>
+
+            <!--CARD LUMINOSA 2-->
+
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="pane grande.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PAIN</h2>
+            </div>
+
+            <!--CARD LUMINOSA 3-->
+
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="panino.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">SANDWICHS</h2>
+            </div>
+
+            <!--CARD LUMINOSA 4-->
+
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="panini alga.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;"> ALGUES SPIURINE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 5-->
+            <div class="card animate__animated animate__backInDown">
+
+                <img class="sfondo" src="panini barbabietola.jpg" alt="">
+                <h2 style="font-size: large; text-align: center; ">BETTERAVE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 6-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="panino carbone.jpg" alt="">
+                <h2 style="font-size: large; text-align: center; ">CHARBON</h2>
+            </div>
+
+            <!--CARD LUMINOSA 7-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="paninicereali.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;"> CÉRÉALES</h2>
+            </div>
+
+            <!--CARD LUMINOSA 8-->
+
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="panini integrali.png" alt="">
+                <h2 style="font-size: large; text-align: center;">INTÉGRAL</h2>
+            </div>
+
+            <!--CARD LUMINOSA 9-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="panini kurkuma.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">KURKUMA</h2>
+            </div>
+
+
+
+
+
+            <h1 style="text-align: center; font-size: xx-large; margin-bottom: 30px; margin-top: 30px;">BOUTIQUE DE FRITES</h1>
+
+            <!--card luminosa 10-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="arancino.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">ARANCINI</h2>
+            </div>
+
+            <!--CARD LUMINOSA 11-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="calzone.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">CALZONE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 12-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="ciambella salata.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">BEIGNET SALÉ</h2>
+            </div>
+            <!--CARD LUMINOSA 13-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo"
+                    src="https://i2.wp.com/shop.ilpanequotidiano.com/wp-content/uploads/2022/05/NIK_7639-2.jpg?fit=1400%2C1000&ssl=1"
+                    alt="">
+                <h2 style="font-size: large; text-align: center;">CROISSANTS SALÉS</h2>
+            </div>
+
+            <!--CARD LUMINOSA 14-->
+            <div class="card animate__animated animate__backInDown">
+
+                <img class="sfondo" src="https://www.giallozafferano.it/images/28-2861/Focaccia-barese_650x433_wm.jpg"
+                    alt="">
+                <h2 style="font-size: large; text-align: center;">PAIN FOCACCIA À LA BARI</h2>
+            </div>
+
+            <!--CARD LUMINOSA 15-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="panzerotti.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PANZEROTTI</h2>
+            </div>
+
+            <!--CARD LUMINOSA 16-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="pizza.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PIZZA</h2>
+            </div>
+
+            <!--CARD LUMINOSA 17-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo"
+                    src="https://www.italiaatavola.net/images/contenutiarticoli/Scrocchiarella-Frozen-italmill-pizze.jpg"
+                    alt="">
+                <h2 style="font-size: large; text-align: center;">SCROCCHIARELLE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 18-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="vienese.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">VIENNOIS</h2>
+            </div>
+
+            <h1 style="text-align: center; font-size: xx-large; margin-bottom: 30px; margin-top: 30px;">PREMIÈRE SECONDE
+                PLATS</h1>
+
+            <!--CARD LUMINOSA 19-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="canelloni.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">CANNELONS</h2>
+            </div>
+
+            <!--CARD LUMINOSA 20-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="polpo e patate.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">SALADE DE POULPE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 21-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="parmigiana.jpeg" alt="">
+                <h2 style="font-size: large; text-align: center;">PARMIGGIEN</h2>
+            </div>
+
+            <!--CARD LUMINOSA 22-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="pasta al forno.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PÂTES AU FOUR</h2>
+            </div>
+
+            <!--CARD LUMINOSA 23-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="patate riso e cozze.jpg" alt="">
+                <h2 style="font-size: small; text-align: center;">POMMES DE TERRE, RIZ ET MOULES</h2>
+            </div>
+
+            <!--CARD LUMINOSA 24-->
+            <div class="card animate__animated animate__backInDown">
+
+                <img class="sfondo" src="peperoni ripieni.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">POIVRONS FARCIS</h2>
+            </div>
+
+            <!--CARD LUMINOSA 25-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="pollo al forno.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">POULET AU FOUR</h2>
+            </div>
+
+            <!--CARD LUMINOSA 26-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="polpette al forno.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">BOULETTES DE VIANDE AU FOUR</h2>
+            </div>
+
+            <!--CARD LUMINOSA 27-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="porchetta.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PORC</h2>
+            </div>
+
+            <h1 style="text-align: center; font-size: xx-large; margin-bottom: 30px; margin-top: 30px;">PÂTISSERIE</h1>
+
+            <!--CARD LUMINOSA 28-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="ciambellone.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">DONUT</h2>
+            </div>
+
+            <!--CARD LUMINOSA 29-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="crostata di frutta.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">TARTE AUX FRUITS</h2>
+            </div>
+
+            <!--CARD LUMINOSA 30-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="muffin.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">MUFFIN</h2>
+            </div>
+
+            <!--CARD LUMINOSA 31-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="pasticeria mistajpg.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PÂTISSERIE FRAÎCHE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 32-->
+            <div class="card animate__animated animate__backInLeft">
+
+                <img class="sfondo" src="pasticeria secca.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">PÂTISSERIES SÈCHES</h2>
+            </div>
+
+            <!--CARD LUMINOSA 33-->
+            <div class="card animate__animated animate__backInDown">
+
+                <img class="sfondo" src="semifreddi.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">SEMIFREDDI</h2>
+            </div>
+
+            <!--CARD LUMINOSA 34-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="torta al cioccolato.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">GATEAU AU CHOCOLAT</h2>
+            </div>
+
+            <!--CARD LUMINOSA 35-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo"
+                    src="https://www.galbani.it/sites/default/files/styles/width_1920/public/2022-10/Cheesecake_SHub_1280x595_Visual.jpg?itok=BxYDP8Qz"
+                    alt="">
+                <h2 style="font-size: large; text-align: center;">GÂTEAU AU FROMAGE</h2>
+            </div>
+
+            <!--CARD LUMINOSA 36-->
+            <div class="card animate__animated animate__backInRight">
+
+                <img class="sfondo" src="torta ricotta.jpg" alt="">
+                <h2 style="font-size: large; text-align: center;">GÂTEAU À LA RICOTTA</h2>
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+    <!--PARTE FINALE-->
+
+    <section class="py-24 bg-dark" style="margin-top: 30px;">
+        <div class="container">
+            <div class="mw-4xl mx-auto text-center">
+                <div class="pb-9 border-bottom border-dark-light">
+                    <a class="d-inline-block mb-20" href="#">
+                        <img class="img-fluid d-block mx-auto" src="logocontelefono.jpg" alt=""
+                            style="max-height: 300px;">
+                    </a>
+
+                    <div class="row mb-n4 justify-content-between align-items-center">
+                        <div class="col-12 col-md-6 col-lg-2 mb-4">
+
+                            <h1 style="color: white; margin-bottom: 10px;">SOCIAL</h1>
+
+                            <a class="d-inline-block fw-medium text-white text-center" href="#">
+
+                                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #63E6BE;"></i>
+
+                                <i class="fa-brands fa-facebook fa-2xl" style="color: #74C0FC; margin-left: 50px; "></i>
+
+                                <i class="fa-brands fa-instagram fa-2xl" style="color: #FFD43B; margin-left: 50px;"></i>
+
+
+                            </a>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-2 mb-4"><a class="d-inline-block fw-medium text-white "
+                                href="https://www.google.it/maps/place/Via+Pasubio,+157,+70124+Bari+BA/@41.1105752,16.8648148,16z/data=!3m1!4b1!4m6!3m5!1s0x1347e857adba8331:0x6ab53fddbb83cc24!8m2!3d41.1105712!4d16.8673897!16s%2Fg%2F11c22kwrq5?hl=it&entry=ttu"
+                                target="_blank">
+
+
+                                <img src="via Pasubio 157.png" alt="indirizzo">
+                                <h1 style="margin-top: 20px;">Via Pasubio, 157, 70125 Bari BA</h1>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-2 mb-4">
+                            <a class="d-inline-block fw-medium text-white">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    POLITIQUE EN MATIÈRE DE COOKIES
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 style="color: black;" class="modal-title fs-5"
+                                                    id="staticBackdropLabel">POLITIQUE EN MATIÈRE DE COOKIES</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p style="color: black;">
+
+                                                    .1 Que sont les cookies ?<br><br>
+
+                                                     Conformément à l'article 13 du Code de confidentialité (Décret
+                                                     Législative 196/2003 et modifications et ajouts ultérieurs) le
+                                                     société EF Education First Ltd. (« EF »), Haldenstrasse 4, 6006
+                                                     Lucerne, Suisse en tant que responsable du traitement Vi
+                                                     fournit les informations suivantes sur les cookies et les outils
+                                                     analogues utilisés par nos sites Web. Sur nos sites Internet
+                                                     présents en plus de ceux qui pourront être lancés dans les futurs « Sites »
+                                                     Les cookies sont de petits fichiers texte ou des éléments d'information qui
+                                                     sont stockés sur vos ordinateurs ou appareils mobiles (par ex.
+                                                     exemple smartphones ou tablettes) lorsque vous visitez le nôtre
+                                                     Sites. Les cookies contiennent généralement le nom du site Web.
+                                                     origine, le « cycle de vie » du cookie (c'est-à-dire pendant combien de temps
+                                                     restent sur vos appareils), ainsi qu'une valeur numérique qui est
+                                                     généralement un numéro unique généré de manière aléatoire.
+                                                    <br><br>
+                                                    2.Pour quelles raisons utilisons-nous des cookies ?<br><br>
+
+                                                     Nous utilisons des cookies pour améliorer le fonctionnement de nos sites
+                                                     et pour personnaliser nos sites et nos produits sur
+                                                     en fonction de vos intérêts et de vos besoins. Les cookies sont capables de
+                                                     faites comme décrit car les sites Web sont capables de lire
+                                                     et transcrire ces fichiers, leur permettant de vous reconnaître et
+                                                     stocker des informations pertinentes qui rendront l'utilisation plus pratique
+                                                     du site Internet (par exemple en stockant vos paramètres
+                                                     préféré).
+
+                                                     Les cookies peuvent également être utilisés pour accélérer votre
+                                                     activités futures et améliorer l’expérience d’utilisation du
+                                                     nos Sites. Nous utilisons des cookies pour compiler des statistiques anonymes.
+                                                     et agrégés qui nous permettent de comprendre comment les utilisateurs
+                                                     utiliser nos Sites et pour nous permettre d'améliorer
+                                                     sa structure et son contenu. Nous ne pouvons pas vous identifier
+                                                     personnellement grâce à ces informations.
+
+                                                    Les données collectées et traitées via les cookies seront traitées
+                                                     principalement grâce à l'utilisation d'outils électroniques pour
+                                                     aux fins qui y sont spécifiées, conformément au Code de confidentialité,
+                                                     y compris les questions de sécurité. Fournir des informations
+                                                     les données personnelles via les cookies sont nécessaires pour ce que l'on appelle les cookies
+                                                     techniques ou indispensables, notamment les cookies qui sont utilisés
+                                                     afin de vous permettre de naviguer sur les Sites et pour ce que l'on appelle
+                                                     les cookies nécessaires ou de préférence, notamment les cookies qui sont
+                                                     nécessaires pour vous fournir les services et fonctionnalités que vous demandez.
+                                                     Si vous n'acceptez pas ces cookies, et donc ne fournissez pas les vôtres
+                                                     informations personnelles, nous ne pourrons pas gérer les vôtres
+                                                     visites sur les Sites et pour vous fournir des services et fonctionnalités
+                                                     demandes. Votre consentement n'est pas nécessaire pour ces types de
+                                                     biscuits. Pour les cookies analytiques et marketing, y compris par exemple i
+                                                     cookies de plug-in social, la communication des données personnelles est
+                                                     facultatif et il n'y aura aucune conséquence si c'est le cas
+                                                     refuser ce type de cookies.
+
+                                                     Notre personnel autorisé et le responsable du traitement, le cas échéant
+                                                     nommés, ils auront accès à vos données. Les données collectées via i
+                                                     les cookies seront partagés avec les autorités compétentes (conformément à
+                                                     par les lois applicables), les tiers qui fournissent des services techniques et
+                                                     systèmes organisationnels fonctionnels pour l'utilisation de cookies comme ici
+                                                     spécifié selon nos instructions, à des tiers en cas de
+                                                     fusions, acquisitions, ventes d’entreprises/d’actifs et autres
+                                                     opérations à caractère extraordinaire et à des destinataires autorisés tels que
+                                                     requis par les lois applicables. Ces destinataires de données
+                                                     agiront, le cas échéant, à titre de propriétaires du
+                                                     traitement, responsables du traitement des données ou personnes désignées à cet effet
+                                                     traitement des données, conformément aux lois applicables en matière de confidentialité et pour
+                                                     les finalités précisées ci-dessus.
+
+                                                     Vous pouvez nous contacter à tout moment pour nous renseigner
+                                                     la liste actualisée des responsables du traitement, de
+                                                     destinataires des données et faire valoir vos droits
+                                                     reconnu par l'article 7 du Code de confidentialité, par exemple
+                                                     d'obtenir la confirmation de l'existence de données vous concernant,
+                                                     accéder à ces données, vérifier leur contenu,
+                                                     l'origine, l'exactitude, demander son intégration, sa mise à jour,
+                                                     modification, annulation et transformation sous forme anonyme,
+                                                     blocage pour violation de la loi, pour opposition à
+                                                     traitement pour des raisons légitimes. Le responsable du traitement est EF
+                                                     Education First SA, Haldenstrasse 4, 6006 Lucerne, Suisse.
+                                                    <br>
+                                                    Cookies tiers. <br><br>
+
+                                                    Nous faisons également appel à un certain nombre de fournisseurs qui peuvent
+                                                     définir des cookies sur votre appareil en notre nom lorsque
+                                                     visiter eux-mêmes les Sites afin de leur permettre de fournir leurs propres
+                                                     prestations de service. Si vous souhaitez plus d'informations sur ces
+                                                     cookies, ainsi que des informations sur la manière de refuser de les recevoir
+                                                     cookies, veuillez lire la politique de confidentialité de
+                                                     tiers concernés.
+                                                    <br><br>
+                                                    3.Quels cookies utilisons-nous ? <br><br>
+
+                                                    Vous trouverez ci-dessous une liste des différents types de cookies qui peuvent
+                                                     être utilisé sur les sites EF. Il convient de noter que dans la mesure où le
+                                                     les informations collectées via les cookies constituent des informations
+                                                     personnel, les dispositions de la Politique de Confidentialité s'appliquent e
+                                                     compléter cette politique de cookies.
+                                                    <br><br>
+                                                    Cookies essentiels.
+                                                    <br><br>
+
+                                                    Les cookies essentiels sont nécessaires au fonctionnement du Site,
+                                                     vous permettant de parcourir et d'utiliser ses services e
+                                                     caractéristiques. Sans cookies essentiels, le Site ne sera pas disponible
+                                                     capable de fonctionner aussi régulièrement que nous le souhaiterions et pourrions
+                                                     ne pouvons pas garantir l'utilisation du Site, de certains de ses
+                                                     services ou fonctionnalités que vous demandez.
+                                                    <br><br>
+                                                    <img src="tabella 1.png" alt="">
+                                                    <br><br>
+                                                    Cookies de préférence.
+                                                    <br><br>
+
+                                                    Les cookies de préférences collectent des informations sur vos préférences
+                                                     choix et préférences, nous permettant de mémoriser votre langue ou d'autres
+                                                     paramètres locaux et de personnaliser le Site en conséquence.
+                                                    <br><br>
+
+                                                    <img src="tabella 2.png" alt="">
+                                                    <br><br>
+
+                                                    Cookies de suivi des prises sociales.
+                                                    <br><br>
+
+                                                    Ces cookies sont utilisés pour suivre les membres et les non-membres
+                                                     membres\] des réseaux de médias sociaux pour l'analyse de recherche de
+                                                     développement du marché et des produits.
+                                                    <br><br>
+
+                                                    <img src="tabella 3.png" alt="">
+                                                    <br><br>
+
+                                                    Cookies marketing.
+                                                    <br><br>
+
+                                                    Les cookies publicitaires sont utilisés à des fins de marketing.
+
+                                                    <br><br>
+
+                                                    <img src="tabella 4.png" alt="">
+
+                                                    <br><br>
+
+                                                    4.Comment gérer les cookies ?
+                                                    <br><br>
+                                                    Bien que la plupart des navigateurs Internet soient initialement
+                                                     configuré pour accepter automatiquement les cookies, la plupart d'entre eux
+                                                     des navigateurs Internet vous permettent de modifier les paramètres de
+                                                     bloquer les cookies ou pour vous avertir lorsque des cookies sont définis
+                                                     envoyé à votre appareil.
+
+                                                     En plus des options ci-dessus, vous pouvez refuser, accepter ou
+                                                     supprimer les cookies du Site à tout moment en activant ou
+                                                     en accédant aux paramètres de votre navigateur. des informations sur
+                                                     procédure à suivre pour activer, désactiver ou supprimer le
+                                                     les cookies sont disponibles sur le site Internet du fournisseur via le
+                                                     écran d'aide.
+
+                                                     Veuillez noter que si les cookies sont désactivés ou
+                                                     supprimé, toutes les fonctionnalités du site peuvent ne pas fonctionner
+                                                     comme prévu, par exemple, vous ne pourrez peut-être pas
+                                                     visitez certaines zones du site ou vous pourriez ne pas recevoir
+                                                     des informations personnalisées lorsque vous visitez le Site.
+
+                                                     Si vous utilisez plusieurs appareils pour afficher et accéder au
+                                                     Les sites (par exemple ordinateurs, smartphones, tablettes, etc.) sont
+                                                     vous devez vous assurer que chaque navigateur sur chaque appareil est
+                                                     ajusté en fonction de vos préférences en matière de cookies.
+                                                    <br><br>
+
+                                                    5. Balises de pixels
+                                                    <br><br>
+
+                                                    Certaines des pages que vous visitez sur le Site peuvent également collecter
+                                                    informations grâce à l'utilisation de balises pixel (également connues sous le nom de Gifs
+                                                    transparent) qui peut être partagé avec des tiers de support
+                                                    directement nos activités promotionnelles et le développement de
+                                                    site web. Par exemple, des informations sur votre utilisation de sites Web
+                                                    des visiteurs des Sites peuvent être partagés avec des tiers qui
+                                                    exercer des activités d'agence de publicité afin d'améliorer la
+                                                    fonction de bannières publicitaires sur nos sites Internet. Le
+                                                    les informations collectées grâce à l'utilisation de ces balises pixel ne sont pas,
+                                                    cependant, personnellement identifiables, même s'ils peuvent être
+                                                    liés à vos informations personnelles.
+                                                    <br><br>
+
+                                                    6.Contactez-nous
+                                                    <br><br>
+
+                                                    Si vous avez des questions sur cette politique en matière de cookies, veuillez
+                                                     Contactez-nous.
+
+                                                     Veuillez noter que les communications effectuées via le
+                                                     les e-mails ne sont pas toujours sécurisés, à cet égard non
+                                                     envoyez-nous un e-mail avec des informations sur votre carte de crédit ou
+                                                     avec des informations sensibles.
+
+
+
+                                                </p>
+
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">FERMER</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <h6 style="color: white; text-align: right; font-weight: 200;">SITE CRÉÉ PAR ALESSIO GIANNOCCARO</h6>
+
+    </section>
+
+    
+
+    <div id="popup" class="popup" style="display: none;">
+        <button id="closeButton" class="close-button">
+
+            <i class="fa-solid fa-x"></i>
+        </button>
+
+        <div class="content">
+            <img src="uomopane.jpg" alt="Popup Image">
+            <p>Venez nous rendre visite à notre bureau à <br>
+                Via Pasubio 157 Bari Code Postal 70124 <br>
+                ou appelez nos numéros <br>
+                Téléphone fixe : 0808175169 <br>
+                Portable : 3889788780 <br>
+                pour découvrir les produits du jour
+
+                <i class="fa-regular fa-heart fa-shake" style="color: #ffffff;"></i>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>
